@@ -1,0 +1,17 @@
+meta {
+  name: actualizar bootcamps por id
+  type: http
+  seq: 5
+}
+
+patch {
+  url: http://localhost:3000/bootcamps/672ccd897faad0a8052fcb92
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "averageRating" : "5"
+  }
+}

@@ -1,0 +1,25 @@
+meta {
+  name: Crear bootcamps
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://localhost:3000/bootcamps
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "name" : "HABLAR EN PUBLICO",
+    "phone" : "3443243" ,
+    "address" : "Calle 52 13 65",
+    "averageRating" : "2",
+    "createAt" : "2024-11-12"
+  }
+}
